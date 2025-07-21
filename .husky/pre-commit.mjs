@@ -5,7 +5,6 @@ const run = (cmd) => new Promise((resolve, reject) => exec(
   (error, stdout, stderr) => {
     if (error) reject(error);
     if (stderr) reject(stderr);
-    if (!stdout.trim()) reject(new Error('Command returned empty output'));
     resolve(stdout);
   }
 ));
