@@ -6,8 +6,7 @@
       "plugins": {
         "da": {
           "name": "cards",
-          "rows": 1,
-          "columns": 2
+          "behaviour": "cards"
         }
       },
       "filter": "cards"
@@ -18,8 +17,7 @@
       "plugins": {
         "da": {
           "name": "card",
-          "rows": 2,
-          "columns": 0
+          "behaviour": "card"
         }
       },
       "model": "card",
