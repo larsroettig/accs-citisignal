@@ -52,15 +52,6 @@
     ]
   },
   {
-    "id": "column",
-    "components": [
-      "image",
-      "text",
-      "title",
-      "button"
-    ]
-  },
-  {
     "id": "tabs",
     "components": [
       "tabs-item"
