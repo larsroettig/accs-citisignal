@@ -2,11 +2,12 @@
   "definitions": [
     {
       "title": "Cards",
-      "id": "cards",
+      "id": "cards", 
       "plugins": {
         "da": {
           "name": "cards",
-          "behaviour": "cards"
+          "rows": 1,
+          "columns": 2
         }
       },
       "filter": "cards"
@@ -38,7 +39,7 @@
         },
         {
           "component": "text",
-          "valueType": "string",
+          "valueType": "string", 
           "name": "div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[alt]",
           "label": "Image Alt",
           "multi": false
@@ -61,7 +62,7 @@
       ]
     },
     {
-      "id": "card",
+      "id": "card", 
       "components": [
         "image",
         "text"
