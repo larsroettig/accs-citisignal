@@ -1,0 +1,15 @@
+{
+    "definitions": [
+      {
+        "title": "Button",
+        "id": "button",
+        "plugins": {
+          "da": {
+            "name": "button",
+            "type": "button"
+          }
+        }
+      }
+    ],
+    "models": []
+  }

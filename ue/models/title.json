@@ -1,0 +1,15 @@
+{
+    "definitions": [
+      {
+        "title": "Title",
+        "id": "title",
+        "plugins": {
+          "da": {
+            "name": "title",
+            "type": "title"
+          }
+        }
+      }
+    ],
+    "models": []
+  }
