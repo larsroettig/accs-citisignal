@@ -8,34 +8,18 @@
   {
     "id": "section",
     "components": [
+      "text",
+      "image",
+      "hero",
       "cards",
       "columns",
-      "fragment",
-      "hero",
-      "image",
-      "quote",
-      "search",
-      "tabs",
-      "table",
-      "text"
-    ]
-  },
-  {
-    "id": "accordion",
-    "components": [
-      "accordion-item"
+      "fragment"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
-    ]
-  },
-  {
-    "id": "carousel",
-    "components": [
-      "carousel-item"
     ]
   },
   {
@@ -53,12 +37,6 @@
     "components": [
       "text",
       "image"
-    ]
-  },
-  {
-    "id": "tabs",
-    "components": [
-      "tabs-item"
     ]
   }
 ]
