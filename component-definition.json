@@ -15,26 +15,6 @@
           }
         },
         {
-          "title": "Title",
-          "id": "title",
-          "plugins": {
-            "da": {
-              "name": "title",
-              "type": "title"
-            }
-          }
-        },
-        {
-          "title": "Button",
-          "id": "button",
-          "plugins": {
-            "da": {
-              "name": "button",
-              "type": "button"
-            }
-          }
-        },
-        {
           "title": "Image",
           "id": "image",
           "plugins": {
