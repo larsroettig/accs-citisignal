@@ -24,6 +24,16 @@
             {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "component": "reference",
+              "name": "background[src]",
+              "label": "Image"
+            },
+            {
+              "component": "richtext",
+              "name": "fancy",
+              "label": "Fancy"
             }
           ]
         }
@@ -34,16 +44,12 @@
     {
       "id": "section",
       "components": [
+        "text",
+        "image",
+        "hero",
         "cards",
         "columns",
-        "fragment",
-        "hero",
-        "image",
-        "quote",
-        "search",
-        "tabs",
-        "table",
-        "text"
+        "fragment"
       ]
     }
   ]
