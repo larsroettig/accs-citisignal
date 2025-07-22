@@ -132,18 +132,15 @@
     "id": "columns",
     "fields": [
       {
-        "component": "text",
-        "valueType": "number",
-        "name": "rows",
-        "value": "",
-        "label": "Rows"
-      },
-      {
-        "component": "text",
+        "component": "number",
         "valueType": "number",
         "name": "columns",
-        "value": "",
-        "label": "Columns"
+        "label": "Number of Columns",
+        "value": 2,
+        "validation": {
+          "numberMin": 1,
+          "numberMax": 6
+        }
       }
     ]
   },

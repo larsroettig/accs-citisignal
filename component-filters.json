@@ -41,11 +41,15 @@
   {
     "id": "columns",
     "components": [
-      "column"
+      "columns-row"
     ]
   },
   {
-    "id": "column",
+    "id": "columns-row",
+    "components": []
+  },
+  {
+    "id": "columns-cell",
     "components": [
       "text",
       "image"
