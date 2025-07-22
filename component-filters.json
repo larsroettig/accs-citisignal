@@ -8,23 +8,16 @@
   {
     "id": "section",
     "components": [
-      "accordion",
       "cards",
-      "carousel",
       "columns",
-      "embed",
       "fragment",
-      "form",
       "hero",
       "image",
       "quote",
       "search",
       "tabs",
       "table",
-      "text",
-      "title",
-      "button",
-      "video"
+      "text"
     ]
   },
   {
@@ -55,9 +48,7 @@
     "id": "column",
     "components": [
       "text",
-      "image",
-      "button",
-      "title"
+      "image"
     ]
   },
   {

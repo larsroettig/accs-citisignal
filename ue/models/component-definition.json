@@ -8,12 +8,6 @@
           "...": "./text.json#/definitions"
         },
         {
-          "...": "./title.json#/definitions"
-        },
-        {
-          "...": "./button.json#/definitions"
-        },
-        {
           "...": "./image.json#/definitions"
         }
       ]
