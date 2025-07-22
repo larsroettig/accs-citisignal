@@ -6,23 +6,31 @@
       "plugins": {
         "da": {
           "name": "columns",
-          "rows": "1",
-          "columns": "2"
+          "rows": 1,
+          "columns": 2,
+          "behaviour": "columns"
         }
-      },
-      "model": "columns",
-      "filter": "columns"
+      }
     },
     {
-      "title": "Column",
-      "id": "column",
+      "title": "Columns Row",
+      "id": "columns-row",
       "plugins": {
         "da": {
-          "name": "column",
-          "unsafeHTML": "<div></div>"
+          "name": "columns-row",
+          "behaviour": "columns-row"
         }
-      },
-      "filter": "column"
+      }
+    },
+    {
+      "title": "Columns Cell",
+      "id": "columns-cell",
+      "plugins": {
+        "da": {
+          "unsafeHTML": "<div></div>",
+          "behaviour": "columns-cell"
+        }
+      }
     }
   ],
   "models": [
@@ -30,18 +38,15 @@
       "id": "columns",
       "fields": [
         {
-          "component": "text",
-          "valueType": "number",
-          "name": "rows",
-          "value": "",
-          "label": "Rows"
-        },
-        {
-          "component": "text",
+          "component": "number",
           "valueType": "number",
           "name": "columns",
-          "value": "",
-          "label": "Columns"
+          "label": "Number of Columns",
+          "value": 2,
+          "validation": {
+            "numberMin": 1,
+            "numberMax": 6
+          }
         }
       ]
     }
@@ -50,11 +55,15 @@
     {
       "id": "columns",
       "components": [
-        "column"
+        "columns-row"
       ]
     },
     {
-      "id": "column",
+      "id": "columns-row",
+      "components": []
+    },
+    {
+      "id": "columns-cell",
       "components": [
         "text",
         "image"
