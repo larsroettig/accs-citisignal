@@ -23,13 +23,6 @@
     ]
   },
   {
-    "id": "card",
-    "components": [
-      "image",
-      "text"
-    ]
-  },
-  {
     "id": "columns",
     "components": [
       "columns-row"
