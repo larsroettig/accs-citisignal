@@ -134,16 +134,16 @@
       {
         "component": "text",
         "valueType": "number",
-        "name": "columns",
+        "name": "rows",
         "value": "",
-        "label": "Columns"
+        "label": "Rows"
       },
       {
         "component": "text",
         "valueType": "number",
-        "name": "rows",
+        "name": "columns",
         "value": "",
-        "label": "Rows"
+        "label": "Columns"
       }
     ]
   },
