@@ -2,12 +2,11 @@
   "definitions": [
     {
       "title": "Cards",
-      "id": "cards", 
+      "id": "cards",
       "plugins": {
         "da": {
           "name": "cards",
-          "rows": 1,
-          "columns": 2
+          "unsafeHTML": "<div><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div></div>"
         }
       },
       "filter": "cards"
@@ -18,8 +17,7 @@
       "plugins": {
         "da": {
           "name": "card",
-          "rows": 2,
-          "columns": 0
+          "unsafeHTML": "<div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div>"
         }
       },
       "model": "card"
