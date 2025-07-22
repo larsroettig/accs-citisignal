@@ -58,15 +58,6 @@
       "components": [
         "column"
       ]
-    },
-    {
-      "id": "column",
-      "components": [
-        "image",
-        "text",
-        "title",
-        "button"
-      ]
     }
   ]
 }
