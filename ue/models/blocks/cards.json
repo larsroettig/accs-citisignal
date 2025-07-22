@@ -10,7 +10,6 @@
           "columns": 2
         }
       },
-      "model": "cards",
       "filter": "cards"
     },
     {
@@ -23,8 +22,7 @@
           "columns": 0
         }
       },
-      "model": "card",
-      "filter": "card"
+      "model": "card"
     }
   ],
   "models": [
@@ -60,13 +58,6 @@
       "id": "cards",
       "components": [
         "card"
-      ]
-    },
-    {
-      "id": "card", 
-      "components": [
-        "image",
-        "text"
       ]
     }
   ]
