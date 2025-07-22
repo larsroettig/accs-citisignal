@@ -133,6 +133,29 @@
           }
         },
         {
+          "title": "Columns",
+          "id": "columns",
+          "plugins": {
+            "da": {
+              "name": "columns",
+              "unsafeHTML": "<div><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div></div>"
+            }
+          },
+          "model": "columns",
+          "filter": "columns"
+        },
+        {
+          "title": "Column",
+          "id": "column",
+          "plugins": {
+            "da": {
+              "name": "column",
+              "unsafeHTML": "<div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div>"
+            }
+          },
+          "model": "column"
+        },
+        {
           "title": "Fragment",
           "id": "fragment",
           "plugins": {
