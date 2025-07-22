@@ -53,7 +53,8 @@
           "plugins": {
             "da": {
               "name": "cards",
-              "behaviour": "cards"
+              "rows": 1,
+              "columns": 2
             }
           },
           "filter": "cards"
