@@ -2,14 +2,27 @@
   "definitions": [
     {
       "title": "Columns",
-      "id": "columns", 
+      "id": "columns",
       "plugins": {
         "da": {
           "name": "columns",
-          "rows": 1,
-          "columns": 2
+          "columns": "2",
+          "rows": "1"
         }
-      }
+      },
+      "model": "columns",
+      "filter": "columns"
+    },
+    {
+      "title": "Column",
+      "id": "column",
+      "plugins": {
+        "da": {
+          "name": "column",
+          "unsafeHTML": "<div></div>"
+        }
+      },
+      "filter": "column"
     }
   ],
   "models": [
@@ -24,7 +37,7 @@
           "label": "Columns"
         },
         {
-          "component": "text", 
+          "component": "text",
           "valueType": "number",
           "name": "rows",
           "value": "",
