@@ -2,52 +2,33 @@
   "definitions": [
     {
       "title": "Columns",
-      "id": "columns",
+      "id": "columns", 
       "plugins": {
         "da": {
           "name": "columns",
-          "unsafeHTML": "<div><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div></div>"
+          "rows": 1,
+          "columns": 2
         }
-      },
-      "model": "columns",
-      "filter": "columns"
-    },
-    {
-      "title": "Column",
-      "id": "column",
-      "plugins": {
-        "da": {
-          "name": "column",
-          "unsafeHTML": "<div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div>"
-        }
-      },
-      "model": "column"
+      }
     }
   ],
   "models": [
     {
-      "id": "column",
+      "id": "columns",
       "fields": [
         {
-          "component": "reference",
-          "valueType": "string",
-          "name": "div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[src]",
-          "label": "Image",
-          "multi": false
-        },
-        {
           "component": "text",
-          "valueType": "string",
-          "name": "div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[alt]",
-          "label": "Image Alt",
-          "multi": false
+          "valueType": "number",
+          "name": "columns",
+          "value": "",
+          "label": "Columns"
         },
         {
-          "component": "richtext",
-          "name": "div:nth-child(2)",
+          "component": "text", 
+          "valueType": "number",
+          "name": "rows",
           "value": "",
-          "label": "Text",
-          "valueType": "string"
+          "label": "Rows"
         }
       ]
     }
@@ -57,6 +38,15 @@
       "id": "columns",
       "components": [
         "column"
+      ]
+    },
+    {
+      "id": "column",
+      "components": [
+        "text",
+        "image",
+        "button",
+        "title"
       ]
     }
   ]

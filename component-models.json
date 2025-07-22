@@ -129,28 +129,21 @@
     ]
   },
   {
-    "id": "column",
+    "id": "columns",
     "fields": [
       {
-        "component": "reference",
-        "valueType": "string",
-        "name": "div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[src]",
-        "label": "Image",
-        "multi": false
+        "component": "text",
+        "valueType": "number",
+        "name": "columns",
+        "value": "",
+        "label": "Columns"
       },
       {
         "component": "text",
-        "valueType": "string",
-        "name": "div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[alt]",
-        "label": "Image Alt",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "div:nth-child(2)",
+        "valueType": "number",
+        "name": "rows",
         "value": "",
-        "label": "Text",
-        "valueType": "string"
+        "label": "Rows"
       }
     ]
   },

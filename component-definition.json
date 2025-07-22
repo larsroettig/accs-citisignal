@@ -138,22 +138,10 @@
           "plugins": {
             "da": {
               "name": "columns",
-              "unsafeHTML": "<div><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div></div>"
+              "rows": 1,
+              "columns": 2
             }
-          },
-          "model": "columns",
-          "filter": "columns"
-        },
-        {
-          "title": "Column",
-          "id": "column",
-          "plugins": {
-            "da": {
-              "name": "column",
-              "unsafeHTML": "<div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div>"
-            }
-          },
-          "model": "column"
+          }
         },
         {
           "title": "Fragment",
