@@ -138,8 +138,8 @@
           "plugins": {
             "da": {
               "name": "columns",
-              "columns": "2",
-              "rows": "1"
+              "rows": "1",
+              "columns": "2"
             }
           },
           "model": "columns",
