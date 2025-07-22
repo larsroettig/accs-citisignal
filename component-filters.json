@@ -22,6 +22,8 @@
       "tabs",
       "table",
       "text",
+      "title",
+      "button",
       "video"
     ]
   },
