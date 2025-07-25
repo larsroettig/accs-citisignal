@@ -20,25 +20,7 @@ import {
   decorateLinks,
 } from './commerce.js';
 
-const experimentationConfig = {
-  prodHost: 'www.my-site.com',
-  audiences: {
-    mobile: () => window.innerWidth < 600,
-    desktop: () => window.innerWidth >= 600,
-    // define your custom audiences here as needed
-  }
-};
 
-let runExperimentation;
-let showExperimentationOverlay;
-const isExperimentationEnabled = document.head.querySelector('[name^="experiment"],[name^="campaign-"],[name^="audience-"],[property^="campaign:"],[property^="audience:"]')
-  || [...document.querySelectorAll('.section-metadata div')].some((d) => d.textContent.match(/Experiment|Campaign|Audience/i));
-if (isExperimentationEnabled) {
-  ({
-    loadEager: runExperimentation,
-    loadLazy: showExperimentationOverlay,
-  } = await import('../plugins/experimentation/src/index.js'));
-}
 
 /**
  * Builds hero block and prepends to main in a new section.
@@ -97,10 +79,7 @@ export function decorateMain(main) {
  * @param {Element} doc The container element
  */
 async function loadEager(doc) {
-  // Add below snippet early in the eager phase
-  if (runExperimentation) {
-    await runExperimentation(document, experimentationConfig);
-  }
+
 
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
@@ -142,10 +121,7 @@ async function loadLazy(doc) {
 
   loadCommerceLazy();
 
-  // Add below snippet at the end of the lazy phase
-  if (showExperimentationOverlay) {
-    await showExperimentationOverlay(document, experimentationConfig);
-  }
+  
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
