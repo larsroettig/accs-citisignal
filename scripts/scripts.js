@@ -121,7 +121,7 @@ async function loadLazy(doc) {
 
   loadCommerceLazy();
 
-  
+
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
