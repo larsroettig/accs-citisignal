@@ -1,6 +1,7 @@
-# Edge Delivery Services + Adobe Commerce Boilerplate + Citisignal UI
+# Adobe Commerce Storefront with Citisignal
+## Edge Delivery Services + Adobe Commerce Boilerplate + Citisignal UI
 This project boilerplate is for Edge Delivery Services projects that integrate with Adobe Commerce.
-
+This Repository will be kept updated with the latest boilerplate commerce and has Universal Editor enabled on da.live
 ## Documentation
 
 Before using the boilerplate, we recommend you to go through the documentation on https://experienceleague.adobe.com/developer/commerce/storefront/ and more specifically:
