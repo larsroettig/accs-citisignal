@@ -1,0 +1,33 @@
+{
+  "public": {
+    "default": {
+      "commerce-core-endpoint": "https://edge-sandbox-graph.adobe.io/api/916e4fb3-9913-4070-a434-3c79c3defaca/graphql",
+      "commerce-endpoint": "https://edge-sandbox-graph.adobe.io/api/916e4fb3-9913-4070-a434-3c79c3defaca/graphql",
+      "headers": {
+        "all": {
+          "Store": "citisignal_us"
+        },
+        "cs": {
+          "Magento-Customer-Group": "b6589fc6ab0dc82cf12099d1c2d40ab994e8410c",
+          "Magento-Store-Code": "citisignal_store",
+          "Magento-Store-View-Code": "citisignal_us",
+          "Magento-Website-Code": "citisignal",
+          "x-api-key": "4dfa19c9fe6f4cccade55cc5b3da94f7",
+          "Magento-Environment-Id": "7Jr8rygNo8BeXzd6Gp4jJ6"
+        }
+      },
+      "analytics": {
+        "base-currency-code": "USD",
+        "environment": "Production",
+        "store-id": 1,
+        "store-name": "Main Website Store",
+        "store-url": "https://main--haug-4jJ6-accs-citisignal--demo-system-stores.aem.live/",
+        "store-view-id": 1,
+        "store-view-name": "Default Store View",
+        "website-id": 1,
+        "website-name": "Main Website"
+      },
+      "commerce-assets-enabled": true
+    }
+  }
+}
