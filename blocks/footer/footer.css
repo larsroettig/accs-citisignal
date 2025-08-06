@@ -16,9 +16,32 @@ footer .footer p {
     color: var(--background-color);
 }
 
-footer .footer img {
-    width: 99px;
+footer .footer-logo {
+    display: flex;
+    justify-content: left;
+    margin-bottom: var(--spacing-big);
+}
+
+footer .footer-logo a {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+footer .footer-logo a:hover {
+    transform: scale(1.02);
+}
+
+footer .footer-logo svg {
+    width: 150px;
     height: auto;
+    fill: var(--background-color);
+}
+
+@media (max-width: 899px) {
+    footer .footer-logo svg {
+        width: 120px;
+    }
 }
 
 

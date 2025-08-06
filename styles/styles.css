@@ -12,37 +12,49 @@
 
 /* stylelint-disable no-empty-source */
 :root, .dropin-design {
-  /* Adobe Commerce Dropin design tokens */
-  --main-color-accent: #8821f4;
-  --color-brand-300: #6d6d6d;
-  --color-brand-500: #454545;
-  --color-brand-600: #383838;
-  --color-brand-700: #2b2b2b;
-  --color-brand-800: #1e1e1e;
-  --color-brand-900: #111;
-  --color-brand-1000: #000;
-  --color-neutral-50: #fff;
-  --color-neutral-100: #fafafa;
-  --color-neutral-200: #f5f5f5;
-  --color-neutral-300: #e8e8e8;
-  --color-neutral-400: #d6d6d6;
-  --color-neutral-500: #b8b8b8;
-  --color-neutral-600: #8f8f8f;
-  --color-neutral-700: #666;
-  --color-neutral-800: #3d3d3d;
-  --color-neutral-900: #292929;
-  --color-positive-200: #eff5ef;
-  --color-positive-500: #7fb078;
-  --color-positive-800: #53824c;
-  --color-informational-200: #eeeffb;
-  --color-informational-500: #6978d9;
-  --color-informational-800: #5d6dd6;
-  --color-warning-200: #fdf3e9;
-  --color-warning-500: #e79f5c;
-  --color-warning-800: #cc7a2e;
-  --color-alert-200: #ffebeb;
-  --color-alert-500: #db7070;
-  --color-alert-800: #c35050;
+  /* Healthcare-focused color palette */
+  --main-color-accent: #00C761; /* Primary green for healthcare */
+  
+  /* Brand Colors - Medical Green Theme */
+  --color-brand-300: #E8F7EF;
+  --color-brand-500: #00A651; /* Primary brand color */
+  --color-brand-600: #008F45;
+  --color-brand-700: #007839;
+  --color-brand-800: #00612E;
+  --color-brand-900: #004A23;
+  --color-brand-1000: #003418;
+
+  /* Neutral Colors - Clean and Professional */
+  --color-neutral-50: #FFFFFF;
+  --color-neutral-100: #F8F9FA;
+  --color-neutral-200: #E9ECEF;
+  --color-neutral-300: #DEE2E6;
+  --color-neutral-400: #CED4DA;
+  --color-neutral-500: #ADB5BD;
+  --color-neutral-600: #6C757D;
+  --color-neutral-700: #495057;
+  --color-neutral-800: #343A40;
+  --color-neutral-900: #212529;
+
+  /* Status Colors - Clear Communication */
+  --color-positive-200: #E3F7EC; /* Success light */
+  --color-positive-500: #00C761; /* Success */
+  --color-positive-800: #00A651; /* Success dark */
+
+  /* Information Colors - Clear and Trustworthy */
+  --color-informational-200: #E6F3FF;
+  --color-informational-500: #0066CC; /* Medical blue */
+  --color-informational-800: #004B96;
+
+  /* Warning Colors - Attention-grabbing but not alarming */
+  --color-warning-200: #FFF3E0;
+  --color-warning-500: #FF9800;
+  --color-warning-800: #F57C00;
+
+  /* Alert Colors - Clear but not aggressive */
+  --color-alert-200: #FFEBEE;
+  --color-alert-500: #DC3545; /* Medical red */
+  --color-alert-800: #C82333;
   --color-button-active: var(--color-brand-700);
   --color-button-focus: var(--color-neutral-400);
   --color-button-hover: var(--color-brand-600);
@@ -279,17 +291,24 @@ button {
 
 /* links */
 a:not(.dropin-design a) {
-  color: var(--color-brand-500);
-
-  /* font: var(--type-body-1-strong-font); */
+  color: var(--color-informational-500);
+  font-weight: 500;
   letter-spacing: var(--type-body-1-strong-letter-spacing);
   text-decoration: none;
   overflow-wrap: break-word;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid transparent;
 }
 
 a:not(.dropin-design a):hover {
-  color: var(--color-brand-1000);
-  text-decoration: underline;
+  color: var(--color-informational-800);
+  border-bottom-color: currentColor;
+}
+
+a:not(.dropin-design a):focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-informational-200);
+  border-radius: 2px;
 }
 
 /* buttons */
@@ -300,13 +319,13 @@ button.button {
   max-width: 100%;
   margin: var(--spacing-small) 0;
   border: var(--shape-border-width-3) solid transparent;
-  border-radius: var(--shape-border-radius-3);
-  padding: 0.5em 1.2em;
+  border-radius: var(--shape-border-radius-2);
+  padding: 0.75em 1.5em;
   font: var(--type-button-2-font);
   letter-spacing: var(--type-button-2-letter-spacing);
   font-style: normal;
-  font-weight: 500;
-  line-height: 1.25;
+  font-weight: 600;
+  line-height: 1.5;
   text-align: center;
   text-decoration: none;
   background-color: var(--color-brand-500);
@@ -315,6 +334,8 @@ button.button {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 main a.button:hover,
@@ -323,6 +344,14 @@ button.button:hover,
 button.button:focus {
   background-color: var(--color-brand-600);
   cursor: pointer;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+main a.button:focus,
+button.button:focus {
+  box-shadow: 0 0 0 3px var(--color-brand-300);
 }
 
 main a.button.disabled,
