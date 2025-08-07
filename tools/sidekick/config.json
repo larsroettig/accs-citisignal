@@ -1,7 +1,7 @@
 {
     "project": "Boilerplate",
     "editUrlLabel": "Document Authoring",
-    "editUrlPattern": "https://da.live/edit#/{{org}}/{{site}}{{pathname}}",
+    "editUrlPattern": "https://da.live/edit#/demo-system-stores/kevin-4jj6-citisignal/{{pathname}}",
     "plugins": [
         {
             "id": "cif",
@@ -9,7 +9,7 @@
             "environments": [
                 "edit"
             ],
-            "url": "https://main--accs-citisignal--demo-system-stores.aem.live/tools/picker/dist/index.html",
+            "url": "https://main--accs-citisignal--larsroettig.aem.page/tools/picker/dist/index.html",
             "isPalette": true,
             "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
         }
