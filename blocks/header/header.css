@@ -387,16 +387,19 @@ header nav .nav-tools button.nav-cart-button {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  filter: brightness(0) invert(1);
+  color: var(--color-brand-300);
 }
 
+
+
 header nav .nav-tools button.nav-cart-button[data-count]::after {
+  filter: none;
   content: attr(data-count);
   position: absolute;
   top: 0;
   right: -2px;
   background-color: var(--header-accent-green);
-  color: var(--header-text-white);
+  color: var(--color-brand-300);
   border-radius: 50%;
   width: 1.75em;
   height: 1.75em;
@@ -820,4 +823,16 @@ li
     height: 15rem;
     max-width: 15rem;
     max-height: 15rem;
+}
+
+.dropin-design .cart-cart-summary-list__heading { 
+    color: var(--color-brand-300);
+}
+
+.dropin-cart-item__wrapper { 
+    color: var(--color-brand-300);
+}
+
+header nav .nav-tools button.nav-cart-button:after {
+  color: black; /* Or #000 */
 }
